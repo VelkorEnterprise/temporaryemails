@@ -5,15 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsx generateSeoPages.ts && tsx generateSitemap.ts && vite build",
+    "build": "tsx generateSitemap.ts && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-helmet-async": "^2.0.5",
-    "react-router-dom": "^7.13.1",
-    "recharts": "^3.7.0"
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-helmet-async": "2.0.5",
+    "react-router-dom": "7.13.1",
+    "recharts": "3.7.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

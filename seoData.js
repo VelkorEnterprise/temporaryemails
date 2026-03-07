@@ -1,4 +1,4 @@
-const countries = [
+export const countries = [
   { slug: 'uk', name: 'UK', code: 'GB', lang: 'en', term: 'Temp mail' },
   { slug: 'germany', name: 'Germany', code: 'DE', lang: 'de', term: 'Einweg e-mail' },
   { slug: 'france', name: 'France', code: 'FR', lang: 'fr', term: 'Email jetable' },
@@ -71,7 +71,7 @@ const countries = [
   { slug: 'tunisia', name: 'Tunisia', code: 'TN', lang: 'ar', term: 'Barid muwaqqat' }
 ];
 
-const useCases = [
+export const useCases = [
     { suffix: '', titleSuffix: '' },
     { suffix: '-for-facebook', titleSuffix: 'for Facebook' },
     { suffix: '-for-instagram', titleSuffix: 'for Instagram' },
@@ -97,5 +97,3 @@ const useCases = [
     { suffix: '-for-education', titleSuffix: 'for Education' },
     { suffix: '-for-jobs', titleSuffix: 'for Jobs' }
 ];
-
-module.exports = { countries, useCases };
