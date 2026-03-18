@@ -155,7 +155,9 @@ const TempMailLogic: React.FC = () => {
 
     const handleSelectMessage = useCallback(async (message: Message) => {
         setLoading(true);
+        setView('emailDetail');
         setSelectedMessage(null);
+        window.scrollTo(0, 0);
         const detail = await handleApiCall((account) => fetchMessageDetail(account.token, message.id, account.apiSource));
         if (detail) setSelectedMessage({...detail, address: emailAccount?.address});
         setLoading(false);
@@ -241,7 +243,7 @@ const TempMailLogic: React.FC = () => {
                             seoData={currentSeoPage}
                         />
                         <div className="bg-[#f8f9fa] py-16">
-                            <div className="max-w-4xl mx-auto px-0 sm:px-4 w-full">
+                            <div className="max-w-4xl mx-auto px-4 w-full">
                                 <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
                                     <button 
                                         onClick={loadInbox} 
@@ -253,7 +255,7 @@ const TempMailLogic: React.FC = () => {
                                     </button>
                                 </div>
 
-                                <div className="bg-white rounded-[2.5rem] shadow-2xl p-0 sm:p-8 mb-4 sm:mb-8 border border-gray-100 overflow-hidden relative">
+                                <div className="bg-white rounded-[2.5rem] shadow-2xl p-6 sm:p-8 mb-8 border border-gray-100 overflow-hidden relative">
                                     {isRefreshing && (
                                         <div className="absolute top-0 left-0 w-full h-1 bg-indigo-100">
                                             <div className="h-full bg-indigo-500 animate-progress-loading"></div>
@@ -264,20 +266,14 @@ const TempMailLogic: React.FC = () => {
                                         {t('inbox') || 'Inbox'}
                                     </h2>
 
-                                    <div className="flex flex-col overflow-hidden">
+                                    <div className="min-h-[450px]">
                                         {loading && !emailAccount ? (
                                             <div className="flex flex-col items-center justify-center h-48 text-center animate-pulse">
                                                 <Icons.Spinner className="w-12 h-12 animate-spin text-indigo-500 mb-6" />
                                                 <p className="text-gray-500 font-bold uppercase tracking-widest text-xs">{loadingMessage}</p>
                                             </div>
-                                        ) : selectedMessage ? (
-                                            <div className="flex-grow overflow-hidden">
-                                                <EmailDetail message={selectedMessage} onClose={() => setSelectedMessage(null)} />
-                                            </div>
                                         ) : (
-                                            <div className="flex-grow overflow-hidden">
-                                                <EmailList messages={messages} onSelectMessage={handleSelectMessage} />
-                                            </div>
+                                            <EmailList messages={messages} onSelectMessage={handleSelectMessage} />
                                         )}
                                     </div>
                                 </div>
@@ -285,6 +281,10 @@ const TempMailLogic: React.FC = () => {
                         </div>
                         <InfoDump onSelectArticle={handleSelectArticle} onNavigateBlog={navigateToBlog} seoData={currentSeoPage} />
                     </>
+                )}
+
+                {view === 'emailDetail' && selectedMessage && (
+                    <EmailDetail message={selectedMessage} onClose={handleBackToMain} />
                 )}
 
                 {view === 'articleDetail' && selectedArticle && (

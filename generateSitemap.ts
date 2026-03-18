@@ -1,4 +1,4 @@
-import { seoPages } from './data/seoPages.ts';
+import { seoPages } from './src/data/seoPages.ts';
 import fs from 'fs';
 
 let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
