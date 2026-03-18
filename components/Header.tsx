@@ -26,8 +26,8 @@ const Header: React.FC<HeaderProps> = ({ onNavigateBlog, onGoHome }) => {
                         <Icons.Logo className="w-8 h-8 text-white"/>
                     </div>
                     <div className="flex flex-col">
-                        <span className="font-black text-3xl tracking-tighter text-white leading-none">
-                            TEMP<span className="text-indigo-500">MAIL</span>
+                        <span className="font-black text-2xl tracking-tighter text-white leading-none">
+                            TEMPORARY<span className="text-indigo-500">EMAILS</span>
                         </span>
                         <span className="text-[10px] uppercase tracking-[0.2em] text-teal-400 font-black">Secure Burner ID</span>
                     </div>

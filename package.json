@@ -1,10 +1,11 @@
 {
-  "name": "temp-mail-pro",
+  "name": "temporary-emails",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "lint": "tsc --noEmit",
     "build": "tsx generateSitemap.ts && vite build",
     "preview": "vite preview"
   },

@@ -64,7 +64,7 @@ const BlogDetailView: React.FC<BlogDetailViewProps> = ({ blog, onBack, onGoHome 
                 <div className="mt-24 p-12 bg-gray-50 rounded-3xl border border-gray-100">
                     <h3 className="text-2xl font-black text-gray-900 mb-6">Expert Verdict</h3>
                     <p className="text-gray-600 text-lg italic font-normal leading-relaxed">
-                        "In our independent testing, utilizing a temporary email generator reduced spam infiltration by over 94% within the first 30 days. It remains the most effective tool for personal data hygiene in 2026."
+                        "In our independent testing, utilizing a temporary emails generator reduced spam infiltration by over 94% within the first 30 days. It remains the most effective tool for personal data hygiene in 2026."
                     </p>
                     <div className="mt-8 flex items-center gap-4">
                         <div className="w-12 h-12 rounded-full bg-teal-400/20 text-teal-600 flex items-center justify-center">
@@ -79,7 +79,7 @@ const BlogDetailView: React.FC<BlogDetailViewProps> = ({ blog, onBack, onGoHome 
                     <h3 className="text-2xl font-black text-gray-900 mb-8">Common Questions</h3>
                     <div className="space-y-6">
                         <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:border-indigo-200 transition-colors">
-                            <h4 className="font-bold text-lg text-gray-900 mb-2">Is temp mail safe?</h4>
+                            <h4 className="font-bold text-lg text-gray-900 mb-2">Is temporary emails safe?</h4>
                             <p className="text-gray-600">Yes, it is encrypted and anonymous. We do not store logs.</p>
                         </div>
                         <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:border-indigo-200 transition-colors">

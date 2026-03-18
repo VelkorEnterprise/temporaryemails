@@ -71,16 +71,16 @@ const Footer: React.FC<FooterProps> = ({ onNavigateBlog, onGoHome }) => {
                         </div>
                         <div className="flex flex-col gap-2">
                             <h4 className="text-white text-[10px] font-black uppercase tracking-widest mb-4">Global Locations</h4>
-                            <button onClick={() => handleTopicClick('temp-mail-usa')} className={linkClasses}>USA</button>
-                            <button onClick={() => handleTopicClick('temp-mail-uk')} className={linkClasses}>United Kingdom</button>
-                            <button onClick={() => handleTopicClick('temp-mail-canada')} className={linkClasses}>Canada</button>
-                            <button onClick={() => handleTopicClick('temp-mail-australia')} className={linkClasses}>Australia</button>
-                            <button onClick={() => handleTopicClick('temp-mail-germany')} className={linkClasses}>Germany</button>
-                            <button onClick={() => handleTopicClick('temp-mail-japan')} className={linkClasses}>Japan</button>
-                            <button onClick={() => handleTopicClick('temp-mail-switzerland')} className={linkClasses}>Switzerland</button>
-                            <button onClick={() => handleTopicClick('temp-mail-france')} className={linkClasses}>France</button>
-                            <button onClick={() => handleTopicClick('temp-mail-singapore')} className={linkClasses}>Singapore</button>
-                            <button onClick={() => handleTopicClick('temp-mail-netherlands')} className={linkClasses}>Netherlands</button>
+                            <button onClick={() => handleTopicClick('temporary-emails-usa')} className={linkClasses}>USA</button>
+                            <button onClick={() => handleTopicClick('temporary-emails-uk')} className={linkClasses}>United Kingdom</button>
+                            <button onClick={() => handleTopicClick('temporary-emails-canada')} className={linkClasses}>Canada</button>
+                            <button onClick={() => handleTopicClick('temporary-emails-australia')} className={linkClasses}>Australia</button>
+                            <button onClick={() => handleTopicClick('temporary-emails-germany')} className={linkClasses}>Germany</button>
+                            <button onClick={() => handleTopicClick('temporary-emails-japan')} className={linkClasses}>Japan</button>
+                            <button onClick={() => handleTopicClick('temporary-emails-switzerland')} className={linkClasses}>Switzerland</button>
+                            <button onClick={() => handleTopicClick('temporary-emails-france')} className={linkClasses}>France</button>
+                            <button onClick={() => handleTopicClick('temporary-emails-singapore')} className={linkClasses}>Singapore</button>
+                            <button onClick={() => handleTopicClick('temporary-emails-netherlands')} className={linkClasses}>Netherlands</button>
                         </div>
                     </div>
                     
@@ -122,7 +122,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigateBlog, onGoHome }) => {
                     </div>
                     
                     <div className="mt-12 text-center text-[8px] font-black text-gray-700 uppercase tracking-[0.4em]">
-                        &copy; 2026 Temp Mail Pro — The World's No.1 Privacy & Anonymity Service — Protected by AES-256 Encryption
+                        &copy; 2026 Temporary Emails — The World's No.1 Privacy & Anonymity Service — Protected by AES-256 Encryption
                     </div>
                 </div>
             </div>

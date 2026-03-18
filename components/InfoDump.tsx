@@ -40,64 +40,64 @@ const InfoDump: React.FC<InfoDumpProps> = ({ onSelectArticle, onNavigateBlog, se
 
     const faqItems = [
         { 
-            q: "Is temp mail safe and secure?", 
-            a: "Yes, our temp mail service is 100% safe and secure. We use advanced encryption to protect your data and ensure your complete anonymity. Your temporary email address is generated randomly and is not linked to your personal identity." 
+            q: "Is temporary emails safe and secure?", 
+            a: "Yes, our temporary emails service is 100% safe and secure. We use advanced encryption to protect your data and ensure your complete anonymity. Your temporary email address is generated randomly and is not linked to your personal identity." 
         },
         { 
-            q: "How long does temp mail last?", 
+            q: "How long does temporary email last?", 
             a: "Your temporary email address remains active until you choose to delete it or your session expires. Unlike standard 10 minute mail, we give you more time to receive your verification codes and important messages." 
         },
         { 
-            q: "Can temp mail be tracked?", 
+            q: "Can temporary email be tracked?", 
             a: "No, our disposable email service is designed to be completely untrackable. We do not log your IP address, location, or device information. Your privacy is our top priority." 
         },
         { 
-            q: "Is using temp mail illegal?", 
+            q: "Is using temporary email illegal?", 
             a: "No, using a temporary email address is completely legal. It is a legitimate tool for protecting your online privacy, avoiding spam, and testing websites without revealing your personal information." 
         },
         { 
-            q: "Does temp mail work for Facebook, Instagram, and Discord?", 
+            q: "Does temporary email work for Facebook, Instagram, and Discord?", 
             a: "Yes, our premium domains are optimized to work with most major platforms including Facebook, Instagram, Discord, Twitter, and ChatGPT. We regularly update our domains to ensure high deliverability." 
         },
         { 
-            q: "How to recover a deleted temp mail?", 
+            q: "How to recover a deleted temporary email?", 
             a: "For security reasons, once a temporary email address is deleted, it cannot be recovered. This ensures that no one else can ever access your private messages after you are done with them." 
         },
         { 
-            q: "Can I send emails from a temp mail address?", 
+            q: "Can I send emails from a temporary email address?", 
             a: "Currently, our service is designed primarily for receiving emails to protect your identity. Sending emails is disabled to prevent abuse and ensure the reputation of our domains remains high." 
         },
         { 
-            q: "What is the difference between temp mail and burner mail?", 
-            a: "Temp mail, burner mail, disposable email, and 10 minute mail are all terms for the same service: a temporary email address used to protect your primary inbox from spam and tracking." 
+            q: "What is the difference between temporary email and burner mail?", 
+            a: "Temporary email, burner mail, disposable email, and 10 minute mail are all terms for the same service: a temporary email address used to protect your primary inbox from spam and tracking." 
         },
         {
-            q: "Where is temp mail password?",
-            a: "Our temp mail service is password-free for your convenience. Access is granted via your unique session token in the browser. If you need password protection, check our premium features."
+            q: "Where is temporary email password?",
+            a: "Our temporary email service is password-free for your convenience. Access is granted via your unique session token in the browser. If you need password protection, check our premium features."
         },
         {
-            q: "Why is temp mail not working?",
-            a: "If temp mail is not working, it may be due to a network issue or the domain being blocked by a specific service. Try refreshing the page to get a new email address with a different domain."
+            q: "Why is temporary email not working?",
+            a: "If temporary email is not working, it may be due to a network issue or the domain being blocked by a specific service. Try refreshing the page to get a new email address with a different domain."
         },
         {
-            q: "Can temp mail be traced?",
-            a: "It is extremely difficult to trace a temp mail back to a specific user because we do not store personal logs. However, illegal activities should never be conducted using any email service."
+            q: "Can temporary email be traced?",
+            a: "It is extremely difficult to trace a temporary email back to a specific user because we do not store personal logs. However, illegal activities should never be conducted using any email service."
         },
         {
             q: "How to create a temporary email account in Gmail?",
             a: "You cannot create a true 'temporary' account directly inside Gmail without phone verification. Our service provides a faster, anonymous alternative that works instantly without any signup."
         },
         {
-            q: "What temp mail works for Discord?",
+            q: "What temporary email works for Discord?",
             a: "Our service is optimized for Discord verification. If one domain is blocked, simply click 'Change' or 'Refresh' to generate a new address that will work."
         },
         {
-            q: "Is temp mail a virus?",
-            a: "No, temp mail itself is not a virus. It is a website service. However, be cautious of opening attachments from unknown senders, just as you would with your regular email."
+            q: "Is temporary email a virus?",
+            a: "No, temporary email itself is not a virus. It is a website service. However, be cautious of opening attachments from unknown senders, just as you would with your regular email."
         },
         {
-            q: "How do I find my temp mail?",
-            a: "Your temp mail address is displayed prominently at the top of our homepage. If you navigate away, simply return to the home page to see your active inbox."
+            q: "How do I find my temporary email?",
+            a: "Your temporary email address is displayed prominently at the top of our homepage. If you navigate away, simply return to the home page to see your active inbox."
         }
     ];
 
@@ -119,18 +119,18 @@ const InfoDump: React.FC<InfoDumpProps> = ({ onSelectArticle, onNavigateBlog, se
                                 <SectionTitle>{t('whatIsDisposableEmail') || 'What is Safe & Secure Disposable Email?'}</SectionTitle>
                                 
                                 <Paragraph>
-                                    {t('disposableEmailDefinition') || 'A disposable email (also known as temp mail, 10 minute mail, or burner mail) is a free, anonymous, and temporary email address that allows you to receive emails without revealing your real identity. It is the best way to protect your primary inbox from spam, advertising, and hackers.'}
+                                    {t('disposableEmailDefinition') || 'A disposable email (also known as temporary emails, 10 minute mail, or burner mail) is a free, anonymous, and temporary email address that allows you to receive emails without revealing your real identity. It is the best way to protect your primary inbox from spam, advertising, and hackers.'}
                                 </Paragraph>
 
                                 <Paragraph>
-                                    {t('advancedService') || 'Our advanced temp mail service provides you with a secure, untrackable, and legit email address that works for Facebook, Instagram, ChatGPT, and Discord. Whether you need a fake email for verification or a temporary gmail alternative, we have you covered.'}
+                                    {t('advancedService') || 'Our advanced temporary emails service provides you with a secure, untrackable, and legit email address that works for Facebook, Instagram, ChatGPT, and Discord. Whether you need a fake email for verification or a temporary gmail alternative, we have you covered.'}
                                 </Paragraph>
                             </>
                         )}
 
-                        <SubTitle>{t('techBehindTitle') || 'The Technology Behind Secure Temp Mail'}</SubTitle>
+                        <SubTitle>{t('techBehindTitle') || 'The Technology Behind Secure Temporary Emails'}</SubTitle>
                         <Paragraph>{t('techBehindP1') || 'We use state-of-the-art encryption and secure cloud infrastructure to generate random, unique email addresses for every user. Our system automatically deletes emails after a set period to ensure your data remains private and cannot be accessed by anyone else.'}</Paragraph>
-                        <Paragraph>{t('techBehindP2') || 'Unlike other services, our temp mail is designed to be undetectable and reliable. We constantly monitor our domains to ensure they are not blacklisted, allowing you to sign up for services that typically block disposable email addresses.'}</Paragraph>
+                        <Paragraph>{t('techBehindP2') || 'Unlike other services, our temporary emails is designed to be undetectable and reliable. We constantly monitor our domains to ensure they are not blacklisted, allowing you to sign up for services that typically block disposable email addresses.'}</Paragraph>
 
                         {/* Banner moved here from after "What is Disposable..." Title */}
                         <AdBanner scriptSrc="https://grotesquephilosophy.com/bZX.V/sadoGflN0FYNWdcP/-eYm-9/uNZAUElakWPmTaY/3/MlzuUh0/MvjjMFtINnjtcjz/N_T/QRyUNbAh" />
@@ -228,18 +228,18 @@ const InfoDump: React.FC<InfoDumpProps> = ({ onSelectArticle, onNavigateBlog, se
                 {/* Extended Information Section */}
                 <div className="max-w-4xl mx-auto space-y-16 mb-24 border-t border-white/5 pt-16">
                     <section>
-                        <SectionTitle>{t('whatIsDeaTitle') || 'Why Use a Safe Temp Mail Service?'}</SectionTitle>
-                        <Paragraph>{t('whatIsDeaP1') || 'Using a safe temp mail service is crucial for maintaining your online privacy. Unlike a standard email address, a disposable email (DEA) allows you to sign up for websites, apps, and newsletters without exposing your real identity or risking your personal data.'}</Paragraph>
-                        <Paragraph>{t('whatIsDeaP2') || 'Our secure temp mail generator creates a unique, anonymous email address that is valid for a specific period. This "burner mail" receives emails just like a regular inbox but is completely isolated from your personal life, ensuring that spam, phishing attempts, and tracking pixels never reach your primary inbox.'}</Paragraph>
-                        <Paragraph>{t('whatIsDeaP3') || 'Whether you are looking for a "10 minute mail" solution or a longer-lasting temporary email, our service offers the perfect balance of convenience and security. We support attachments, verification links, and HTML emails, making it the best temp mail for Facebook, Instagram, and other social media platforms.'}</Paragraph>
+                        <SectionTitle>{t('whatIsDeaTitle') || 'Why Use a Safe Temporary Emails Service?'}</SectionTitle>
+                        <Paragraph>{t('whatIsDeaP1') || 'Using a safe temporary emails service is crucial for maintaining your online privacy. Unlike a standard email address, a disposable email (DEA) allows you to sign up for websites, apps, and newsletters without exposing your real identity or risking your personal data.'}</Paragraph>
+                        <Paragraph>{t('whatIsDeaP2') || 'Our secure temporary emails generator creates a unique, anonymous email address that is valid for a specific period. This "burner mail" receives emails just like a regular inbox but is completely isolated from your personal life, ensuring that spam, phishing attempts, and tracking pixels never reach your primary inbox.'}</Paragraph>
+                        <Paragraph>{t('whatIsDeaP3') || 'Whether you are looking for a "10 minute mail" solution or a longer-lasting temporary email, our service offers the perfect balance of convenience and security. We support attachments, verification links, and HTML emails, making it the best temporary emails for Facebook, Instagram, and other social media platforms.'}</Paragraph>
                     </section>
 
                     <section>
-                        <SubTitle>{t('whyFakeEmailTitle') || 'Is Temp Mail Legit & Legal?'}</SubTitle>
+                        <SubTitle>{t('whyFakeEmailTitle') || 'Is Temporary Emails Legit & Legal?'}</SubTitle>
                         
-                        <Paragraph>{t('whyFakeEmailP1') || 'Yes, using a temporary email address is completely legal and legitimate. It is a smart way to protect your digital footprint. Many users ask, "Is temp mail safe?" The answer is yes, provided you use a reputable service like ours that uses SSL encryption and does not log your activity.'}</Paragraph>
+                        <Paragraph>{t('whyFakeEmailP1') || 'Yes, using a temporary email address is completely legal and legitimate. It is a smart way to protect your digital footprint. Many users ask, "Is temporary emails safe?" The answer is yes, provided you use a reputable service like ours that uses SSL encryption and does not log your activity.'}</Paragraph>
                         <Paragraph>{t('whyFakeEmailP2') || 'You might need a fake email generator for various reasons: testing software, downloading a whitepaper, or accessing a service that requires registration but you do not want to use your real email. In these cases, a disposable email is the ethical and safe choice.'}</Paragraph>
-                        <Paragraph>{t('whyFakeEmailP3') || 'However, we strictly prohibit the use of our temp mail service for illegal activities. Our system is designed to protect privacy, not to facilitate crime. We cooperate with law enforcement when necessary to prevent abuse.'}</Paragraph>
+                        <Paragraph>{t('whyFakeEmailP3') || 'However, we strictly prohibit the use of our temporary emails service for illegal activities. Our system is designed to protect privacy, not to facilitate crime. We cooperate with law enforcement when necessary to prevent abuse.'}</Paragraph>
                         
                         <div className="mt-8">
                             <h4 className="text-xl font-bold text-teal-400 mb-6">{t('legitimateReasonsTitle') || 'Top Reasons to Use Anonymous Email'}</h4>
@@ -250,15 +250,15 @@ const InfoDump: React.FC<InfoDumpProps> = ({ onSelectArticle, onNavigateBlog, se
                             <ul className="space-y-4">
                                 <ListItem><strong>{t('reason1Title') || 'Avoid Spam & Marketing Emails:'}</strong> {t('reason1Body') || 'Keep your real inbox clean by using a burner mail for one-time signups.'}</ListItem>
                                 <ListItem><strong>{t('reason2Title') || 'Protect Your Privacy:'}</strong> {t('reason2Body') || 'Prevent companies from tracking your online behavior and selling your data.'}</ListItem>
-                                <ListItem><strong>{t('reason3Title') || 'Test New Apps Safely:'}</strong> {t('reason3Body') || 'Developers can use temp mail to test registration flows without creating multiple real accounts.'}</ListItem>
+                                <ListItem><strong>{t('reason3Title') || 'Test New Apps Safely:'}</strong> {t('reason3Body') || 'Developers can use temporary emails to test registration flows without creating multiple real accounts.'}</ListItem>
                                 <ListItem><strong>{t('reason4Title') || 'Secure Online Shopping:'}</strong> {t('reason4Body') || 'Use a disposable email for one-time purchases to avoid future marketing spam.'}</ListItem>
                             </ul>
                         </div>
                     </section>
 
                     <section>
-                        <SubTitle>{t('howToChooseTitle') || 'How to Choose the Best Temp Mail?'}</SubTitle>
-                        <Paragraph>{t('howToChooseIntro') || 'Not all temporary email services are created equal. When asking "what is the best temp mail", look for these key features:'}</Paragraph>
+                        <SubTitle>{t('howToChooseTitle') || 'How to Choose the Best Temporary Emails?'}</SubTitle>
+                        <Paragraph>{t('howToChooseIntro') || 'Not all temporary email services are created equal. When asking "what is the best temporary emails", look for these key features:'}</Paragraph>
                         <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                             {[
                                 t('howToChooseL1') || "High Reputation Domains", 
@@ -275,7 +275,7 @@ const InfoDump: React.FC<InfoDumpProps> = ({ onSelectArticle, onNavigateBlog, se
                                 </div>
                             ))}
                         </ul>
-                        <Paragraph>{t('howToChooseOutro') || 'Our service ticks all these boxes, making it the premier choice for anyone asking "is temp mail safe" or looking for a reliable "10 minute mail" alternative.'}</Paragraph>
+                        <Paragraph>{t('howToChooseOutro') || 'Our service ticks all these boxes, making it the premier choice for anyone asking "is temporary emails safe" or looking for a reliable "10 minute mail" alternative.'}</Paragraph>
                     </section>
 
                     <section>

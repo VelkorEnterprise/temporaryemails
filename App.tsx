@@ -26,7 +26,7 @@ import { seoPages } from './data/seoPages.ts';
 
 const POLLING_INTERVAL = 10000;
 
-const TempMailLogic: React.FC = () => {
+const TemporaryEmailsLogic: React.FC = () => {
     const [emailAccount, setEmailAccount] = useState<EmailAccount | null>(null);
     const [messages, setMessages] = useState<Message[]>([]);
     const [selectedMessage, setSelectedMessage] = useState<MessageDetail | null>(null);
@@ -204,8 +204,8 @@ const TempMailLogic: React.FC = () => {
     return (
         <div className="flex flex-col min-h-screen bg-[#0f172a]">
             <Helmet>
-                <title>{currentSeoPage ? currentSeoPage.title : "Temp Mail - Safe, Anonymous & Secure Disposable Email | Free Temp Mail"}</title>
-                <meta name="description" content={currentSeoPage ? currentSeoPage.description : "Get a free, safe, and secure anonymous temporary email address. Protect your privacy from spam, tracking, and hacking. Our legit temp mail service is 100% private and works for Facebook, Instagram, and Discord. No signup required."} />
+                <title>{currentSeoPage ? currentSeoPage.title : "Temporary Emails - Safe, Anonymous & Secure Disposable Email | Free Temporary Emails"}</title>
+                <meta name="description" content={currentSeoPage ? currentSeoPage.description : "Get a free, safe, and secure anonymous temporary email address. Protect your privacy from spam, tracking, and hacking. Our legit temporary email service is 100% private and works for Facebook, Instagram, and Discord. No signup required."} />
                 <link rel="canonical" href={canonicalUrl} />
                 {currentSeoPage && <meta name="keywords" content={currentSeoPage.keywords.join(', ')} />}
                 {currentSeoPage && (
@@ -218,7 +218,7 @@ const TempMailLogic: React.FC = () => {
                             "url": canonicalUrl,
                             "publisher": {
                                 "@type": "Organization",
-                                "name": "Temp Mail"
+                                "name": "Temporary Emails"
                             }
                         })}
                     </script>
@@ -326,7 +326,7 @@ const App: React.FC = () => {
         <HelmetProvider>
             <Router>
                 <Routes>
-                    <Route path="*" element={<TempMailLogic />} />
+                    <Route path="*" element={<TemporaryEmailsLogic />} />
                 </Routes>
             </Router>
         </HelmetProvider>

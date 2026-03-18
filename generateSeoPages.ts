@@ -109,7 +109,7 @@ keywords.forEach(kw => {
         const title = kw.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
         content += `    {
         slug: '${slug}',
-        title: '${title} - Temp Mail Guide',
+        title: '${title} - Temporary Emails Guide',
         description: 'Learn everything about ${kw}. Read our comprehensive guide on disposable email services.',
         keywords: ['${kw}', 'temp mail', 'disposable email', 'anonymous email'],
         h1: '${title}',
