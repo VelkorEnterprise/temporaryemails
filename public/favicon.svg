@@ -1,4 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <circle cx="50" cy="50" r="40" fill="#3b82f6" />
-  <path d="M30 50 L50 30 L70 50 L50 70 Z" fill="white" />
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Thick Red Outer Border/Shape -->
+  <rect x="10" y="130" width="492" height="372" rx="45" fill="#EE1C25"/>
+  <path d="M10 175L256 10L502 175V220L256 55L10 220V175Z" fill="#EE1C25"/>
+  
+  <!-- Blue Envelope Main Body -->
+  <rect x="30" y="150" width="452" height="332" rx="30" fill="#00AEEF"/>
+  
+  <!-- White Paper/Letter Inside -->
+  <rect x="120" y="60" width="272" height="320" rx="20" fill="white"/>
+  <rect x="160" y="130" width="192" height="15" rx="7.5" fill="#E5E7EB"/>
+  <rect x="160" y="180" width="192" height="15" rx="7.5" fill="#E5E7EB"/>
+  
+  <!-- Envelope Front Flap (Lower Part) -->
+  <path d="M30 150L256 320L482 150V452C482 468.569 468.569 482 452 482H60C43.4315 482 30 468.569 30 452V150Z" fill="#00AEEF"/>
+  <!-- Fold Lines for Depth -->
+  <path d="M30 150L256 320L482 150" stroke="#0088CC" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M30 482L200 300" stroke="#0088CC" stroke-width="8" stroke-linecap="round" opacity="0.5"/>
+  <path d="M482 482L312 300" stroke="#0088CC" stroke-width="8" stroke-linecap="round" opacity="0.5"/>
 </svg>

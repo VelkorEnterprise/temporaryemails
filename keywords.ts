@@ -1,11 +1,4 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const keywords = [
+export const keywords: string[] = [
   "are temp email safe",
   "is temp email legit",
   "is temporary email",
@@ -91,33 +84,105 @@ const keywords = [
   "temp company email",
   "who to email",
   "who is the email",
+  "temp mail usa",
+  "temp mail uk",
+  "temp mail canada",
+  "temp mail australia",
+  "temp mail new zealand",
+  "temp mail london",
+  "temp mail nyc",
+  "temp mail sydney",
+  "temp mail toronto",
+  "temp mail ireland",
   "best temp mail for usa",
   "uk disposable email address",
   "australian temp email",
   "canadian temp mail service",
+  "temp mail france",
+  "email jetable",
+  "temp mail germany",
+  "wegwerf email",
+  "temp mail italy",
+  "email temporanea",
+  "temp mail spain",
+  "correo temporal",
+  "temp mail brazil",
+  "email temporário",
+  "temp mail russia",
+  "vremennaya pochta",
+  "temp mail china",
+  "linshi youxiang",
+  "temp mail japan",
+  "sute meado",
+  "temp mail south korea",
+  "imsi imeil",
+  "temp mail india",
+  "temp mail nigeria",
+  "temp mail south africa",
+  "temp mail mexico",
+  "temp mail indonesia",
+  "temp mail turkey",
+  "temp mail poland",
+  "temp mail netherlands",
+  "temp mail vietnam",
+  "temp mail thailand",
+  "temp mail philippines",
+  "temp mail pakistan",
+  "temp mail uae",
+  "temp mail saudi arabia",
+  "temp mail israel",
+  "temp mail egypt",
+  "temp mail argentina",
+  "temp mail colombia",
+  "temp mail chile",
+  "temp mail peru",
+  "temp mail sweden",
+  "temp mail norway",
+  "temp mail denmark",
+  "temp mail finland",
+  "temp mail belgium",
+  "temp mail switzerland",
+  "temp mail austria",
+  "temp mail portugal",
+  "temp mail greece",
+  "temp mail malaysia",
+  "temp mail singapore",
+  "email jetable",
+  "convertisseur PDF",
+  "correo temporal",
+  "conversor de unidades",
+  "linshi youxiang",
+  "临时邮箱",
+  "sute meado",
+  "捨てアド",
+  "tan-i henkan",
+  "単位変換",
+  "einweg e-mail",
+  "einheitenrechner",
+  "email temporanea",
+  "tijdelijke e-mail",
+  "tillfällig e-post",
+  "midlertidig e-post",
+  "midlertidig e-mail",
+  "väliaikainen sähköposti",
+  "email temporário",
+  "prosorinó email",
+  "tymczasowy e-mail",
+  "dočasný e-mail",
+  "tímabundið netfang",
+  "ideiglenes e-mail",
+  "email temporar",
+  "vremenno imeyl",
+  "privremeni e-mail",
+  "začasni e-mail",
+  "ajutine e-post",
+  "pagaidu e-pasts",
+  "laikinas el. paštas",
+  "vremennaya pochta",
+  "geçici e-posta",
+  "ilhoeyong imeil",
+  "barid muwaqqat",
+  "e-mel sementara",
+  "ximel chawkraw",
+  "email sementara"
 ];
-
-const seoPagesPath = path.join(__dirname, 'data', 'seoPages.ts');
-let content = fs.readFileSync(seoPagesPath, 'utf8');
-
-// Remove the closing bracket and semicolon
-content = content.replace(/\];\s*$/, '');
-
-keywords.forEach(kw => {
-    const slug = kw.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-    if (!content.includes(`slug: '${slug}'`)) {
-        const title = kw.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-        content += `    {
-        slug: '${slug}',
-        title: '${title} - Temp Mail Guide',
-        description: 'Learn everything about ${kw}. Read our comprehensive guide on disposable email services.',
-        keywords: ['${kw}', 'temp mail', 'disposable email', 'anonymous email'],
-        h1: '${title}',
-        content: 'Find out the answer to ${kw}. Our temporary email service provides secure, anonymous, and fast disposable email addresses to help you protect your privacy online.'
-    },\n`;
-    }
-});
-
-content += "];\n";
-
-fs.writeFileSync(seoPagesPath, content);

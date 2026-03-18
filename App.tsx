@@ -53,7 +53,7 @@ const TempMailLogic: React.FC = () => {
     const seoSlug = match ? match[1] : undefined;
     const currentSeoPage = seoSlug ? seoPages.find(p => p.slug === seoSlug) : undefined;
     
-    const canonicalUrl = `https://temporaryemails.netlify.app${location.pathname === '/' ? '/' : location.pathname.replace(/\/$/, '')}`;
+    const canonicalUrl = `https://temporaryemails.pages.dev${location.pathname === '/' ? '/' : location.pathname.replace(/\/$/, '')}`;
 
     useEffect(() => {
         if (location.pathname === '/blog') {
@@ -224,9 +224,9 @@ const TempMailLogic: React.FC = () => {
                     </script>
                 )}
                 {seoPages.filter(p => p.langCode && p.countryCode).map(p => (
-                    <link key={p.slug} rel="alternate" hrefLang={`${p.langCode}-${p.countryCode}`} href={`https://temporaryemails.netlify.app/topic/${p.slug}`} />
+                    <link key={p.slug} rel="alternate" hrefLang={`${p.langCode}-${p.countryCode}`} href={`https://temporaryemails.pages.dev/topic/${p.slug}`} />
                 ))}
-                <link rel="alternate" hrefLang="x-default" href="https://temporaryemails.netlify.app/" />
+                <link rel="alternate" hrefLang="x-default" href="https://temporaryemails.pages.dev/" />
             </Helmet>
             <Header onNavigateBlog={navigateToBlog} onGoHome={handleBackToMain} />
             <main className="flex-grow">
