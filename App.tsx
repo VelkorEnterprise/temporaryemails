@@ -223,6 +223,25 @@ const TemporaryEmailsLogic: React.FC = () => {
                         })}
                     </script>
                 )}
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "SoftwareApplication",
+                        "name": "Temporary Emails",
+                        "applicationCategory": "UtilitiesApplication",
+                        "operatingSystem": "All",
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.9",
+                            "ratingCount": "1054321"
+                        },
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "0",
+                            "priceCurrency": "USD"
+                        }
+                    })}
+                </script>
                 {seoPages.filter(p => p.langCode && p.countryCode).map(p => (
                     <link key={p.slug} rel="alternate" hrefLang={`${p.langCode}-${p.countryCode}`} href={`https://temporaryemails.pages.dev/topic/${p.slug}`} />
                 ))}

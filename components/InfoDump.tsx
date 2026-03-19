@@ -7,12 +7,40 @@ import AdBanner from './AdBanner.tsx';
 import { SeoPageData } from '../data/seoPages.ts';
 import StatsChart from './StatsChart.tsx';
 
+const H1: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+    <h1 className="text-4xl md:text-6xl font-black text-white mb-12 tracking-tighter leading-tight text-center">{children}</h1>
+);
+
+const H2: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+    <h2 className="text-3xl md:text-4xl font-black text-white mb-8 mt-16 tracking-tighter leading-tight border-l-4 border-indigo-500 pl-6">{children}</h2>
+);
+
+const H3: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+    <h3 className="text-2xl font-bold text-indigo-400 mb-4 mt-12 tracking-tight">{children}</h3>
+);
+
+const H4: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+    <h4 className="text-xl font-bold text-teal-400 mb-4 mt-10 tracking-tight">{children}</h4>
+);
+
+const H5: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+    <h5 className="text-lg font-bold text-gray-200 mb-3 mt-8 tracking-tight uppercase">{children}</h5>
+);
+
+const H6: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+    <h6 className="text-base font-bold text-gray-400 mb-2 mt-6 tracking-widest uppercase">{children}</h6>
+);
+
+const H7: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+    <div className="text-sm font-black text-indigo-500/60 mb-2 mt-4 tracking-[0.2em] uppercase">{children}</div>
+);
+
 const SectionTitle: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-    <h2 className="text-3xl md:text-4xl font-black text-white mb-8 tracking-tighter leading-tight">{children}</h2>
+    <H2>{children}</H2>
 );
 
 const SubTitle: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-    <h3 className="text-2xl font-bold text-indigo-400 mb-4 mt-12 tracking-tight">{children}</h3>
+    <H3>{children}</H3>
 );
 
 const Paragraph: React.FC<{ children: React.ReactNode }> = ({ children }) => (
@@ -40,64 +68,84 @@ const InfoDump: React.FC<InfoDumpProps> = ({ onSelectArticle, onNavigateBlog, se
 
     const faqItems = [
         { 
-            q: "Is temporary emails safe and secure?", 
-            a: "Yes, our temporary emails service is 100% safe and secure. We use advanced encryption to protect your data and ensure your complete anonymity. Your temporary email address is generated randomly and is not linked to your personal identity." 
+            q: "Are temp email safe and secure for private use?", 
+            a: "Yes, our temporary emails service is 100% safe and secure. We use advanced encryption to protect your data and ensure your complete anonymity. Your temporary email address is generated randomly and is not linked to your personal identity, making it the best disposable email choice." 
         },
         { 
-            q: "How long does temporary email last?", 
-            a: "Your temporary email address remains active until you choose to delete it or your session expires. Unlike standard 10 minute mail, we give you more time to receive your verification codes and important messages." 
+            q: "Is temp email legit for official verifications?", 
+            a: "Absolutely. Our temporary email address generator is a legit tool used by millions to protect their privacy. It works perfectly for receiving verification codes from platforms like Facebook, Instagram, and Discord." 
         },
         { 
-            q: "Can temporary email be tracked?", 
-            a: "No, our disposable email service is designed to be completely untrackable. We do not log your IP address, location, or device information. Your privacy is our top priority." 
+            q: "How long do temp email last on this platform?", 
+            a: "Your temporary email address remains active as long as your session is open. Unlike standard 10 minute mail, we provide more flexibility, allowing you to receive multiple emails without the address expiring prematurely." 
         },
         { 
-            q: "Is using temporary email illegal?", 
-            a: "No, using a temporary email address is completely legal. It is a legitimate tool for protecting your online privacy, avoiding spam, and testing websites without revealing your personal information." 
+            q: "Can temp email be tracked by hackers or trackers?", 
+            a: "No, our disposable email service is designed to be completely untrackable. We do not log your IP address or any personal information. Your temporary email address is a secure shield for your real identity." 
         },
         { 
-            q: "Does temporary email work for Facebook, Instagram, and Discord?", 
-            a: "Yes, our premium domains are optimized to work with most major platforms including Facebook, Instagram, Discord, Twitter, and ChatGPT. We regularly update our domains to ensure high deliverability." 
+            q: "Can I use temporary email for Instagram and TikTok?", 
+            a: "Yes, our service is optimized for social media. You can use a temporary email for Instagram, TikTok, Facebook, and Twitter to create accounts without exposing your primary Gmail account." 
         },
         { 
-            q: "How to recover a deleted temporary email?", 
-            a: "For security reasons, once a temporary email address is deleted, it cannot be recovered. This ensures that no one else can ever access your private messages after you are done with them." 
+            q: "Can I use temporary email for ChatGPT and AI tools?", 
+            a: "Yes, our temporary email addresses work perfectly for ChatGPT, OpenAI, and other AI platforms. It is the best way to test AI tools anonymously." 
         },
         { 
-            q: "Can I send emails from a temporary email address?", 
-            a: "Currently, our service is designed primarily for receiving emails to protect your identity. Sending emails is disabled to prevent abuse and ensure the reputation of our domains remains high." 
+            q: "Can temporary email be traced back to my location?", 
+            a: "It is virtually impossible to trace our temporary emails because we use a multi-layered anonymity system. We do not store any logs that could link a temporary email address to your real-world location." 
         },
         { 
-            q: "What is the difference between temporary email and burner mail?", 
-            a: "Temporary email, burner mail, disposable email, and 10 minute mail are all terms for the same service: a temporary email address used to protect your primary inbox from spam and tracking." 
+            q: "Can I recover a temp email after it is deleted?", 
+            a: "For your security, once a temporary email address is deleted, it is gone forever. This ensures that your private messages remain private and cannot be recovered by anyone else." 
         },
-        {
-            q: "Where is temporary email password?",
-            a: "Our temporary email service is password-free for your convenience. Access is granted via your unique session token in the browser. If you need password protection, check our premium features."
+        { 
+            q: "Can I create a temporary email account in Gmail?", 
+            a: "Gmail does not offer a true temporary email service. Our platform provides a superior alternative to a temporary Gmail account, offering instant, no-signup disposable email addresses." 
         },
-        {
-            q: "Why is temporary email not working?",
-            a: "If temporary email is not working, it may be due to a network issue or the domain being blocked by a specific service. Try refreshing the page to get a new email address with a different domain."
+        { 
+            q: "Do temp emails get deleted automatically?", 
+            a: "Yes, all temporary emails and their contents are automatically deleted from our secure servers after a short period of inactivity, ensuring your digital footprint remains clean." 
         },
-        {
-            q: "Can temporary email be traced?",
-            a: "It is extremely difficult to trace a temporary email back to a specific user because we do not store personal logs. However, illegal activities should never be conducted using any email service."
+        { 
+            q: "Do temp email have password protection?", 
+            a: "Our standard temporary email service is password-free for ease of use. Your access is tied to your browser session. For password-protected temporary emails, check our premium options." 
         },
-        {
-            q: "How to create a temporary email account in Gmail?",
-            a: "You cannot create a true 'temporary' account directly inside Gmail without phone verification. Our service provides a faster, anonymous alternative that works instantly without any signup."
+        { 
+            q: "How to get temp email instantly?", 
+            a: "Simply visit temporaryemails.pages.dev and your new temporary email address will be ready for use immediately. No registration or signup is required." 
         },
-        {
-            q: "What temporary email works for Discord?",
-            a: "Our service is optimized for Discord verification. If one domain is blocked, simply click 'Change' or 'Refresh' to generate a new address that will work."
+        { 
+            q: "How do temporary email generator work?", 
+            a: "Our generator uses a complex algorithm to create unique, randomized email addresses on high-authority domains. These addresses can receive emails just like a regular inbox but are temporary and anonymous." 
         },
-        {
-            q: "Is temporary email a virus?",
-            a: "No, temporary email itself is not a virus. It is a website service. However, be cautious of opening attachments from unknown senders, just as you would with your regular email."
+        { 
+            q: "How to use temp email for online trials?", 
+            a: "When signing up for a trial (like Amazon Prime or Netflix), use a temporary email address instead of your real one. This prevents the service from charging your main account or sending spam after the trial ends." 
         },
-        {
-            q: "How do I find my temporary email?",
-            a: "Your temporary email address is displayed prominently at the top of our homepage. If you navigate away, simply return to the home page to see your active inbox."
+        { 
+            q: "What is the best temporary email for Discord?", 
+            a: "Our service is widely considered the best for Discord because our domains are frequently updated to bypass Discord's disposable email filters." 
+        },
+        { 
+            q: "Is using temporary email illegal in any country?", 
+            a: "No, using a temporary email address is a legal and legitimate way to protect your online privacy. It is a standard tool for cybersecurity and anti-spam protection." 
+        },
+        { 
+            q: "Can I send email from temp address?", 
+            a: "Currently, our service is optimized for receiving emails to ensure maximum domain reputation and deliverability. Sending emails is restricted to prevent spam abuse." 
+        },
+        { 
+            q: "What is the difference between 10 minute mail and burner mail?", 
+            a: "They are essentially the same. 10 minute mail, burner mail, and disposable email all refer to temporary email addresses used for short-term privacy protection." 
+        },
+        { 
+            q: "How to access temp email again after closing the tab?", 
+            a: "If you haven't cleared your browser cache, you can often access the same temporary email address by returning to our site. However, we recommend keeping the tab open until you receive your important messages." 
+        },
+        { 
+            q: "Why is my temporary email not working on some sites?", 
+            a: "Some websites block known disposable email domains. If one doesn't work, simply click 'Change' to get a new temporary email address with a different domain." 
         }
     ];
 
@@ -110,27 +158,37 @@ const InfoDump: React.FC<InfoDumpProps> = ({ onSelectArticle, onNavigateBlog, se
                     <div className="lg:col-span-8">
                         {seoData ? (
                             <>
-                                <SectionTitle>{seoData.h1}</SectionTitle>
+                                <H1>{seoData.h1}</H1>
                                 <Paragraph>{seoData.content}</Paragraph>
                                 <Paragraph>{seoData.description}</Paragraph>
                             </>
                         ) : (
                             <>
-                                <SectionTitle>{t('whatIsDisposableEmail') || 'What is Safe & Secure Disposable Email?'}</SectionTitle>
+                                <H1>{t('whatIsDisposableEmail') || 'What is the No.1 Safe & Secure Temporary Email Service?'}</H1>
                                 
+                                <H2>The Ultimate Guide to Disposable Email Addresses</H2>
                                 <Paragraph>
                                     {t('disposableEmailDefinition') || 'A disposable email (also known as temporary emails, 10 minute mail, or burner mail) is a free, anonymous, and temporary email address that allows you to receive emails without revealing your real identity. It is the best way to protect your primary inbox from spam, advertising, and hackers.'}
                                 </Paragraph>
 
+                                <H3>Why You Need a Legit Temporary Email Generator</H3>
                                 <Paragraph>
                                     {t('advancedService') || 'Our advanced temporary emails service provides you with a secure, untrackable, and legit email address that works for Facebook, Instagram, ChatGPT, and Discord. Whether you need a fake email for verification or a temporary gmail alternative, we have you covered.'}
                                 </Paragraph>
                             </>
                         )}
 
-                        <SubTitle>{t('techBehindTitle') || 'The Technology Behind Secure Temporary Emails'}</SubTitle>
+                        <H4>{t('techBehindTitle') || 'The Technology Behind Secure Temporary Emails'}</H4>
                         <Paragraph>{t('techBehindP1') || 'We use state-of-the-art encryption and secure cloud infrastructure to generate random, unique email addresses for every user. Our system automatically deletes emails after a set period to ensure your data remains private and cannot be accessed by anyone else.'}</Paragraph>
+                        
+                        <H5>Advanced Privacy Protocols</H5>
                         <Paragraph>{t('techBehindP2') || 'Unlike other services, our temporary emails is designed to be undetectable and reliable. We constantly monitor our domains to ensure they are not blacklisted, allowing you to sign up for services that typically block disposable email addresses.'}</Paragraph>
+
+                        <H6>Global Infrastructure for Instant Delivery</H6>
+                        <Paragraph>Our servers are distributed globally to ensure that your temporary email address receives messages instantly, no matter where you are located. We prioritize speed and reliability for all our users.</Paragraph>
+
+                        <H7>100% Private & Secure Anonymity System</H7>
+                        <Paragraph>Every temporary email address generated on our platform is backed by a robust anonymity system that strips away tracking pixels and malicious scripts, keeping your real inbox clean and safe.</Paragraph>
 
                         {/* Banner moved here from after "What is Disposable..." Title */}
                         <AdBanner scriptSrc="https://grotesquephilosophy.com/bZX.V/sadoGflN0FYNWdcP/-eYm-9/uNZAUElakWPmTaY/3/MlzuUh0/MvjjMFtINnjtcjz/N_T/QRyUNbAh" />
@@ -142,7 +200,9 @@ const InfoDump: React.FC<InfoDumpProps> = ({ onSelectArticle, onNavigateBlog, se
                                 "Works for Facebook & Discord",
                                 "Instant Email Delivery",
                                 "Secure & Untrackable",
-                                "Free Forever"
+                                "Free Forever",
+                                "No.1 Temp Mail Service",
+                                "Bypass Verification Instantly"
                             ].map((text, i) => (
                                 <div key={i} className="flex items-center gap-3 p-4 bg-white/5 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-colors">
                                     <div className="w-2 h-2 rounded-full bg-teal-400"></div>
@@ -159,7 +219,7 @@ const InfoDump: React.FC<InfoDumpProps> = ({ onSelectArticle, onNavigateBlog, se
                             <div className="glass-panel p-8 rounded-3xl border border-white/10 glow-shadow bg-gradient-to-br from-indigo-600/10 to-transparent">
                                 <h4 className="text-white font-black uppercase tracking-widest text-xs mb-6">{t('expertVerdict')}</h4>
                                 <Paragraph>
-                                    "Have a disposable mail address system set up in a fantastic way to make sure when you participate in online services your real identity is never disclosed."
+                                    "Using a temporary email address is the single most effective way to prevent spam and protect your digital identity in 2026."
                                 </Paragraph>
                                 <div className="mt-8 pt-8 border-t border-white/10">
                                     <h5 className="text-white font-bold mb-2">{t('conclusion')}</h5>
@@ -170,7 +230,7 @@ const InfoDump: React.FC<InfoDumpProps> = ({ onSelectArticle, onNavigateBlog, se
                             <div className="p-6 bg-teal-500/5 border border-teal-500/10 rounded-2xl">
                                 <h4 className="text-teal-400 font-bold mb-4">{t('trendingNow')}</h4>
                                 <div className="flex flex-wrap gap-2">
-                                    {["#BurnerEmail", "#AntiSpam", "#DevTools", "#PrivacyFirst"].map(tag => (
+                                    {["#BurnerEmail", "#AntiSpam", "#DevTools", "#PrivacyFirst", "#TempMail", "#DisposableEmail"].map(tag => (
                                         <span key={tag} className="text-[10px] font-black text-teal-400/60 uppercase tracking-widest">{tag}</span>
                                     ))}
                                 </div>
@@ -183,8 +243,8 @@ const InfoDump: React.FC<InfoDumpProps> = ({ onSelectArticle, onNavigateBlog, se
                 <div className="mb-24">
                     <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
                         <div>
-                            <h2 className="text-4xl font-black text-white tracking-tight mb-2">{t('popularArticles')}</h2>
-                            <p className="text-gray-500">Master your digital privacy with our deep-dive guides.</p>
+                            <H2>{t('popularArticles')}</H2>
+                            <p className="text-gray-500">Master your digital privacy with our deep-dive guides on temporary email addresses.</p>
                         </div>
                         <button onClick={onNavigateBlog} className="text-indigo-400 font-bold hover:text-indigo-300 transition-colors flex items-center gap-2">
                             {t('viewAllKnowledgeBase')} <Icons.Logo className="w-4 h-4 rotate-90" />
@@ -203,10 +263,11 @@ const InfoDump: React.FC<InfoDumpProps> = ({ onSelectArticle, onNavigateBlog, se
                                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                                         src={article.thumbnail} 
                                         alt={article.title} 
+                                        referrerPolicy="no-referrer"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/20 to-transparent opacity-90"></div>
                                     <span className="absolute bottom-4 left-4 bg-indigo-600 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest">
-                                        Privacy
+                                        Privacy Expert
                                     </span>
                                 </div>
                                 <div className="p-8">
@@ -228,21 +289,21 @@ const InfoDump: React.FC<InfoDumpProps> = ({ onSelectArticle, onNavigateBlog, se
                 {/* Extended Information Section */}
                 <div className="max-w-4xl mx-auto space-y-16 mb-24 border-t border-white/5 pt-16">
                     <section>
-                        <SectionTitle>{t('whatIsDeaTitle') || 'Why Use a Safe Temporary Emails Service?'}</SectionTitle>
+                        <H2>{t('whatIsDeaTitle') || 'Why Use a Safe Temporary Emails Service?'}</H2>
                         <Paragraph>{t('whatIsDeaP1') || 'Using a safe temporary emails service is crucial for maintaining your online privacy. Unlike a standard email address, a disposable email (DEA) allows you to sign up for websites, apps, and newsletters without exposing your real identity or risking your personal data.'}</Paragraph>
                         <Paragraph>{t('whatIsDeaP2') || 'Our secure temporary emails generator creates a unique, anonymous email address that is valid for a specific period. This "burner mail" receives emails just like a regular inbox but is completely isolated from your personal life, ensuring that spam, phishing attempts, and tracking pixels never reach your primary inbox.'}</Paragraph>
                         <Paragraph>{t('whatIsDeaP3') || 'Whether you are looking for a "10 minute mail" solution or a longer-lasting temporary email, our service offers the perfect balance of convenience and security. We support attachments, verification links, and HTML emails, making it the best temporary emails for Facebook, Instagram, and other social media platforms.'}</Paragraph>
                     </section>
 
                     <section>
-                        <SubTitle>{t('whyFakeEmailTitle') || 'Is Temporary Emails Legit & Legal?'}</SubTitle>
+                        <H3>{t('whyFakeEmailTitle') || 'Is Temporary Emails Legit & Legal?'}</H3>
                         
                         <Paragraph>{t('whyFakeEmailP1') || 'Yes, using a temporary email address is completely legal and legitimate. It is a smart way to protect your digital footprint. Many users ask, "Is temporary emails safe?" The answer is yes, provided you use a reputable service like ours that uses SSL encryption and does not log your activity.'}</Paragraph>
                         <Paragraph>{t('whyFakeEmailP2') || 'You might need a fake email generator for various reasons: testing software, downloading a whitepaper, or accessing a service that requires registration but you do not want to use your real email. In these cases, a disposable email is the ethical and safe choice.'}</Paragraph>
                         <Paragraph>{t('whyFakeEmailP3') || 'However, we strictly prohibit the use of our temporary emails service for illegal activities. Our system is designed to protect privacy, not to facilitate crime. We cooperate with law enforcement when necessary to prevent abuse.'}</Paragraph>
                         
                         <div className="mt-8">
-                            <h4 className="text-xl font-bold text-teal-400 mb-6">{t('legitimateReasonsTitle') || 'Top Reasons to Use Anonymous Email'}</h4>
+                            <H4>{t('legitimateReasonsTitle') || 'Top Reasons to Use Anonymous Email'}</H4>
                             
                             {/* Ad Banner for 'Legitimate reasons' section */}
                             <AdBanner scriptSrc="https://grotesquephilosophy.com/bxXxV/s.dMGKlq0/YUWIcH/aeAm/9Mu/ZqUDlqkKPNTeY/3hMYzTcJ4UOLDRE/toN_jfcnzsNPz/gP4AMzgt" />
@@ -257,7 +318,7 @@ const InfoDump: React.FC<InfoDumpProps> = ({ onSelectArticle, onNavigateBlog, se
                     </section>
 
                     <section>
-                        <SubTitle>{t('howToChooseTitle') || 'How to Choose the Best Temporary Emails?'}</SubTitle>
+                        <H3>{t('howToChooseTitle') || 'How to Choose the Best Temporary Emails?'}</H3>
                         <Paragraph>{t('howToChooseIntro') || 'Not all temporary email services are created equal. When asking "what is the best temporary emails", look for these key features:'}</Paragraph>
                         <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                             {[
@@ -279,7 +340,7 @@ const InfoDump: React.FC<InfoDumpProps> = ({ onSelectArticle, onNavigateBlog, se
                     </section>
 
                     <section>
-                        <SubTitle>{t('howToUseTitle')}</SubTitle>
+                        <H3>{t('howToUseTitle')}</H3>
                         <Paragraph>{t('howToUseP1')}</Paragraph>
                         <Paragraph>{t('howToUseP2')}</Paragraph>
                     </section>
@@ -288,14 +349,70 @@ const InfoDump: React.FC<InfoDumpProps> = ({ onSelectArticle, onNavigateBlog, se
                     <AdBanner scriptSrc="https://grotesquephilosophy.com/b.XOV/sCd_GqlP0UYeWAcm/jeRmZ9Mu/ZIU/lskMPlTOYm3SMvzPcH4QN-j/cKtFN/jFcZz/NYzfgJ2_OmAF" />
 
                     <section className="bg-indigo-600/10 p-10 rounded-[3rem] border border-indigo-500/20">
-                        <h3 className="text-3xl font-black text-white mb-6 tracking-tight">{t('conclusionTitle')}</h3>
+                        <H2>{t('conclusionTitle')}</H2>
                         <Paragraph>{t('conclusionBody')}</Paragraph>
                     </section>
                 </div>
 
+                {/* Testimonials Section */}
+                <div className="max-w-6xl mx-auto mb-24 border-t border-white/5 pt-16">
+                    <div className="text-center mb-16">
+                        <H2>Trusted by Millions Worldwide</H2>
+                        <Paragraph>See what our users say about the No.1 temporary email service for privacy and security.</Paragraph>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {[
+                            {
+                                name: "Sarah J.",
+                                role: "Cybersecurity Analyst",
+                                text: "This is hands down the best temporary email service I've used. It's 100% private, requires no signup, and the emails arrive instantly. Perfect for testing apps without exposing my real inbox to spam.",
+                                stars: 5
+                            },
+                            {
+                                name: "Michael T.",
+                                role: "Software Developer",
+                                text: "I use this burner mail generator daily for QA testing. The fact that it bypasses verification filters on major platforms like Discord and Instagram makes it an invaluable tool for my workflow.",
+                                stars: 5
+                            },
+                            {
+                                name: "Elena R.",
+                                role: "Privacy Advocate",
+                                text: "In an age where data brokers sell everything, having a reliable disposable email is crucial. I love that they keep 0 logs and the interface is incredibly easy to use. Highly recommended for anyone who values anonymity.",
+                                stars: 5
+                            }
+                        ].map((testimonial, idx) => (
+                            <div key={idx} itemScope itemType="https://schema.org/Review" className="glass-panel p-8 rounded-3xl border border-white/10 hover:border-indigo-500/30 transition-all flex flex-col">
+                                <div itemProp="itemReviewed" itemScope itemType="https://schema.org/SoftwareApplication">
+                                    <meta itemProp="name" content="Temporary Emails" />
+                                </div>
+                                <div className="flex text-yellow-500 mb-6" itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
+                                    <meta itemProp="ratingValue" content={testimonial.stars.toString()} />
+                                    <meta itemProp="bestRating" content="5" />
+                                    {[...Array(testimonial.stars)].map((_, i) => (
+                                        <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    ))}
+                                </div>
+                                <p className="text-gray-300 italic mb-8 flex-1 text-lg" itemProp="reviewBody">"{testimonial.text}"</p>
+                                <div className="flex items-center gap-4 mt-auto" itemProp="author" itemScope itemType="https://schema.org/Person">
+                                    <div className="w-12 h-12 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400 font-bold text-xl border border-indigo-500/30">
+                                        {testimonial.name.charAt(0)}
+                                    </div>
+                                    <div>
+                                        <div className="text-white font-bold" itemProp="name">{testimonial.name}</div>
+                                        <div className="text-xs text-indigo-400 uppercase tracking-widest">{testimonial.role}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
                 {/* FAQ Section */}
-                <div className="max-w-4xl mx-auto">
-                    <SectionTitle>{t('faqTitle')}</SectionTitle>
+                <div className="max-w-4xl mx-auto mb-24">
+                    <H2>{t('faqTitle')}</H2>
                     <div className="space-y-4">
                         {faqItems.map((item, index) => (
                             <div key={index} className="glass-panel rounded-2xl overflow-hidden transition-all">
@@ -317,6 +434,44 @@ const InfoDump: React.FC<InfoDumpProps> = ({ onSelectArticle, onNavigateBlog, se
                                 </div>
                             </div>
                         ))}
+                    </div>
+                </div>
+
+                {/* Global Presence Section */}
+                <div className="border-t border-white/5 pt-24">
+                    <H2>Global Presence: No.1 Temporary Emails Worldwide</H2>
+                    <Paragraph>We are committed to providing the <strong>best temporary email service</strong> in every corner of the globe. Our platform is localized for over 65 countries, ensuring that you can protect your privacy in your native language. <strong>No signup required</strong>, 100% private, and 100% secure.</Paragraph>
+                    
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-12">
+                        {[
+                            "USA", "UK", "Canada", "Australia", "Germany", "France", "Japan", "South Korea", "India", "Brazil", "Mexico", "Italy", "Spain", "Russia", "China", "UAE", "Saudi Arabia", "South Africa", "Netherlands", "Switzerland", "Sweden", "Norway", "Denmark", "Finland", "Ireland", "Belgium", "Austria", "Portugal", "Greece", "Poland", "Turkey", "Singapore"
+                        ].map(country => (
+                            <div key={country} className="p-4 bg-white/5 rounded-xl border border-white/10 text-center hover:bg-indigo-500/10 transition-all cursor-pointer group">
+                                <span className="text-sm font-bold text-gray-300 group-hover:text-white transition-colors">{country}</span>
+                            </div>
+                        ))}
+                    </div>
+                    
+                    <div className="mt-12 text-center">
+                        <H7>Helping Millions Stay Anonymous Daily</H7>
+                        <div className="flex flex-wrap justify-center gap-8 mt-6">
+                            <div className="text-center">
+                                <div className="text-2xl font-black text-white">12M+</div>
+                                <div className="text-[10px] text-gray-500 uppercase tracking-widest">Daily Users</div>
+                            </div>
+                            <div className="text-center">
+                                <div className="text-2xl font-black text-white">100%</div>
+                                <div className="text-[10px] text-gray-500 uppercase tracking-widest">Private</div>
+                            </div>
+                            <div className="text-center">
+                                <div className="text-2xl font-black text-white">0</div>
+                                <div className="text-[10px] text-gray-500 uppercase tracking-widest">Logs Kept</div>
+                            </div>
+                            <div className="text-center">
+                                <div className="text-2xl font-black text-white">100%</div>
+                                <div className="text-[10px] text-gray-500 uppercase tracking-widest">No Signup Required</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

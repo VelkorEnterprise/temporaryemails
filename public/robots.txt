@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
 Sitemap: https://temporaryemails.pages.dev/sitemap.xml
-Sitemap: https://temporaryemails.pages.dev/Sitemap.xml

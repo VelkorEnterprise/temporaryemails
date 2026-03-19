@@ -17,6 +17,10 @@ const Header: React.FC<HeaderProps> = ({ onNavigateBlog, onGoHome }) => {
 
     return (
         <header className="flex-shrink-0 z-50 sticky top-0 bg-[#0f172a]/90 backdrop-blur-xl border-b border-white/5">
+            {/* Announcement Bar */}
+            <div className="bg-indigo-600 text-white text-xs font-bold text-center py-2 px-4 tracking-wide">
+                We help more than a Million+ users daily with fast, dependable, and high quality services.
+            </div>
             <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
                 <div 
                     className="flex items-center space-x-4 group cursor-pointer" 

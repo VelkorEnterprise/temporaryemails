@@ -39,6 +39,3 @@ slugs.forEach(slug => {
 sitemap += `</urlset>`;
 
 fs.writeFileSync(path.join(__dirname, 'public', 'sitemap.xml'), sitemap);
-fs.writeFileSync(path.join(__dirname, 'public', 'Sitemap.xml'), sitemap);
-fs.writeFileSync(path.join(__dirname, 'sitemap.xml'), sitemap);
-fs.writeFileSync(path.join(__dirname, 'Sitemap.xml'), sitemap);
